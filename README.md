@@ -1,2 +1,2 @@
 # wordlegame
-Web based wordle game written with Javascript
+Web based wordle game written with Javascript, HTML, and CSS
