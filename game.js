@@ -15473,4 +15473,12 @@ function checkWinLose(guess, tiles) {
     stopInteraction()
     return
   }
+
+  const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])")
+  if(remainingTiles.length === 0) {
+    showAlert("You lost, the correct word was " + targetWord.toUpperCase(), null)
+    showAlert("Thanks for Playing!", null)
+    stopInteraction()
+    return
+  }
 }
